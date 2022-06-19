@@ -1,3 +1,4 @@
+
 <?php
 
 $mysqli = new mysqli('localhost', 'root', '', 'test');
@@ -17,9 +18,7 @@ print '<table border="1">';
 
 while($row=$result->fetch_assoc()) {
     print '<tr>';
-    //print '<td>'.$row['user_id'].'</td>';
     print '<td>'.$row['user_name'].'</td>';
-    //print '<td>'.$row['user_date'].'</td>';
     print '<td>'.$row['liczba'].'</td>';
     print '</tr>';
 
@@ -30,13 +29,12 @@ print '</br>';
 print '</br>';
 
 
+
 print '<h2> TOP 10 najczęstszych dat od 2000-01-01 </h2>';
 print '<table border="1">';
 
 while($row=$result1->fetch_assoc()) {
     print '<tr>';
-    //print '<td>'.$row['user_id'].'</td>';
-    //print '<td>'.$row['user_name'].'</td>';
     print '<td>'.$row['user_date'].'</td>';
     print '<td>'.$row['liczba'].'</td>';
     print '</tr>';
